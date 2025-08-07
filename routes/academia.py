@@ -7,5 +7,5 @@ def academias():
     return render_template('listar_academias.html')
 
 @academias_route.route('/<int:academia_id>', methods=["GET"])
-def detalhe_academia(academia_id):
+def detalhes_academia(academia_id):
     return render_template('academia.html')
